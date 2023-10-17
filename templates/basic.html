@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksar</title>
+
+    <meta name="description" content="Aksar is standard couselling service oraganisation for problems from academics to mental health" />
+    <meta content="counselling, mental health, academics, stress" name="keywords"></meta>
+
+    {% comment %} <!-- Favicons --> {% endcomment %}
+  <link href="{% static '/assets/img/favicon.ico' %}" rel="icon">
+  <link href="{% static '/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    {% comment %} <!-- Vendor CSS Files --> {% endcomment %}
+  <link href="{% static '/assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  {% comment %} <!-- Template Main CSS File --> {% endcomment %}
+  <link href="{% static '/assets/css/style.css' %}" rel="stylesheet">
+
+
+    {% comment %} <!-- Google Fonts --> {% endcomment %}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body>
+
+  {% comment %} <!-- ======= Top Bar ======= --> {% endcomment %}
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:aksar4you@gmail.com">aksar4you@gmail.com</a>
+        <i class="bi bi-phone"></i><a href="tel:+91 9818527575">+91 9818527575</a>
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <!-- <a href="" class="twitter"><i class="bi bi-twitter"></i></a> -->
+        <a href="https://www.facebook.com/profile.php?id=100087482295940&mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/aksar_kounselling?igshid=MzRlODBiNWFlZA==" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aksarcounselling" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  
+  {% comment %} <!-- ======= Header ======= --> {% endcomment %}
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/">Aksar</a></h1>
+      
+      {% comment %} <!-- Uncomment below if you prefer to use an image logo --> {% endcomment %}
+      
+      <!-- <a href="index.html" class="logo me-auto"><img src="{% static '/assets/img/logo.png'%}" alt="aksar logo" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#services">Services</a></li>
+          {% comment %} <li><a class="nav-link scrollto" href="/#departments">Departments</a></li> {% endcomment %}
+          {% comment %} <li><a class="nav-link scrollto" href="/#counsellers">Counsellers</a></li> {% endcomment %}
+          
+          <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/signup">Sign Up</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      {% comment %} <!-- .navbar --> {% endcomment %}
+
+      
+
+      <a href="/appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+
+    </div>
+  </header>
+  {% comment %} <!-- End Header --> {% endcomment %}
+
+
+
+
+      <h2>{% block title %}{% endblock %}</h2>
+      {% block body %}{% endblock %}
+
+
+      <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Aksar</h3>
+            <p>
+              42-SF Omaxe Galleria, Sector 14, Bahadurgarh, Haryana 124507 <br><br>
+              <strong>Phone:</strong> +91 9818527575<br>
+              <strong>Email:</strong> aksar4you@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.termsandconditionsgenerator.com/live.php?token=KkSOIEWyRt5PlD6Gf8yYIAgCBSl6pV2X">Terms of service</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/appointment">Counselling</a></li>
+              <li>
+          </div>
+
+          {% comment %} <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div> {% endcomment %}
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Aksar</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <!-- <a href="/#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+        <a href="https://www.facebook.com/profile.php?id=100087482295940&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/aksar_kounselling?igshid=MzRlODBiNWFlZA==" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aksarcounselling" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  {% comment %} <div id="preloader"></div> {% endcomment %}
+  <a href="/#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    {% comment %} <!-- Vendor JS Files --> {% endcomment %}
+  <script src="{% static '/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/php-email-form/validate.js' %}"></script>
+
+  {% comment %} <!-- Template Main JS File --> {% endcomment %}
+  <script src="{% static '/assets/js/main.js' %}"></script>
+
+
+  {% comment %} cdn  {% endcomment %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+  <script>
+    let showHideBtn = document.getElementById("PasswordToogle")
+    let passField = document.getElementById("floatingPassword")
+    showHideBtn.addEventListener('click',()=>{
+      if (passField.type == "password"){
+        passField.type = "text"
+      }
+      else{
+        passField.type = "password"
+      }
+    })
+  </script>
+    
+</body>
+</html>
